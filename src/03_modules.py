@@ -12,9 +12,13 @@ import sys
 print('Argument 1', str(sys.argv[0]))
 print('Argument 2', str(sys.argv[1:]))
 
+for i in sys.argv:
+    print('new sys.arg', i)
+
 import platform
 # Print out the OS platform you're using:
 print('Platform:', platform.system())
+print('New Platform:',sys.platform)
 
 # Print out the version of Python you're using:
 print('Python Version:', sys.version)
@@ -32,3 +36,4 @@ print('Current Working Directory:', os.getcwd())
 import getpass
 # Print out your machine's login name
 print('Login Name:', getpass.getuser())
+
