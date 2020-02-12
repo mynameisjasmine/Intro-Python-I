@@ -30,3 +30,28 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+  
+  
+  # print(args)
+  # month = datetime.today.month()
+  # year = datetime.today.year()
+  # calendar.prmonth(year, month)
+
+def calendar_func(month, year):
+  
+  if month == True:
+    return month
+  elif month == False:
+    return datetime.today().month
+  if year == True:
+    return year
+  elif year == False:
+    return datetime.today().year
+
+  else: 
+    print('Calendar error message:', message)
+
+calendar.prmonth(2020, 2)
+
+message = f"Please enter input as {sys.argv} [month] and [year]"
+  
