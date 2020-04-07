@@ -51,22 +51,25 @@ print(geocache)
 
 
 # STRETCH - this algorithm checks if a number is a prime number
-def is_prime(num):
-    first_half =   [i for i in range(1, 101)]
-    
-    count = 0
-    for i in first_half:
-        if num % i == 0:
-            count += 1
-            total = count
+
+
+def is_prime(num=int(input('Enter a number -----> '))):
+        if num:
             
+            first_half =   [i for i in range(1, 101)]
         
-    if total == 2:
+        count = 0
+        for i in first_half:
+            if num % i == 0:
+                count += 1
+                total = count
+                
+            
+        if total == 2:
 
-        print(num, 'is a prime number')
-    elif total < 2 or total > 2:
-            print(num, 'is not a prime number')
+            print(num, 'is a prime number')
+        elif total < 2 or total > 2:
+                print(num, 'is not a prime number')
    
    
-
-is_prime(52)
+is_prime()
