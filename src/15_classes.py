@@ -47,3 +47,26 @@ geocache = Geocache("Newberry Views", 1.5, 2, 44.052137, -121.41556)
 
 # Print it--also make this print more nicely
 print(geocache)
+
+
+
+# STRETCH - this algorithm checks if a number is a prime number
+def is_prime(num):
+    first_half =   [i for i in range(1, 101)]
+    
+    count = 0
+    for i in first_half:
+        if num % i == 0:
+            count += 1
+            total = count
+            
+        
+    if total == 2:
+
+        print(num, 'is a prime number')
+    elif total < 2 or total > 2:
+            print(num, 'is not a prime number')
+   
+   
+
+is_prime(52)
